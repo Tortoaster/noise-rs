@@ -181,9 +181,6 @@ where
                 // Increase the attenuation for the next octave, to be equal to persistence ^ (x + 1)
                 attenuation *= self.persistence;
 
-                // Scale the signal by the current 'altitude' of the function.
-                signal *= result;
-
                 // Add signal to result.
                 result += signal;
             }
@@ -223,9 +220,6 @@ where
                 // Increase the attenuation for the next octave, to be equal to persistence ^ (x + 1)
                 attenuation *= self.persistence;
 
-                // Scale the signal by the current 'altitude' of the function.
-                signal *= result;
-
                 // Add signal to result.
                 result += signal;
             }
@@ -264,9 +258,6 @@ where
 
                 // Increase the attenuation for the next octave, to be equal to persistence ^ (x + 1)
                 attenuation *= self.persistence;
-
-                // Scale the signal by the current 'altitude' of the function.
-                signal *= result;
 
                 // Add signal to result.
                 result += signal;
